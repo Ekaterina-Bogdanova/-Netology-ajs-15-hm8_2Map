@@ -1,9 +1,5 @@
 import ErrorRepository from '../app';
 
-beforeEach(() => {
-  jest.resetAllMocks();
-});
-
 test('gives a description of the error', () => {
   const err = new ErrorRepository();
   const result = err.translate(400);
